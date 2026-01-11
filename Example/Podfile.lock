@@ -1,0 +1,16 @@
+PODS:
+  - FavIcon (3.0.6)
+
+DEPENDENCIES:
+  - FavIcon (from `../`)
+
+EXTERNAL SOURCES:
+  FavIcon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FavIcon: bd30fd34a75e15f10555113855c4a2d7aa332584
+
+PODFILE CHECKSUM: 8fed9bea022878d9cf15caa802e6b34d2b129225
+
+COCOAPODS: 1.16.2
