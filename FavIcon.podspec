@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     # 允许在 Module 中引用非模块化头文件（解决 Xcode 16 报错的关键）
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     # 确保自定义 Module Map 能被找到
-    'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/Sources/Modules',
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/../../Sources/Modules',
     # Xcode 16 额外需要的配置
     'CLANG_ENABLE_MODULES' => 'YES',
     'DEFINES_MODULE' => 'YES'
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
-    'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/Sources/Modules',
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/../../Sources/Modules',
     # 确保链接器能找到 libxml2
     'OTHER_LDFLAGS' => '-lxml2'
   }
